@@ -38,7 +38,7 @@
 
 ```
 	dependencies {
-	        implementation 'com.github.crazyandcoder:citypicker:6.0.0'
+	        implementation 'com.github.crazyandcoder:citypicker:6.0.1'
 	}
 ```
 
@@ -46,7 +46,7 @@
 ### **更新说明**
 #### 最新版本
 
-**V6.0.0版本更新内容（2021.07.09）**
+**V6.0.1版本更新内容（2021.07.09）**
   1. 更新数据源，使用最新省市区行政数据
   2. 优化汉字转拼音逻辑，提高解析精度
 
