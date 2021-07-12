@@ -23,16 +23,32 @@
 
 #### **gradle引用**
 
+1. 在 Project 的 build.gradle 中增加 jitpack 的 maven 地址
+
 ```
-implementation 'liji.library.dev:citypickerview:5.2.4'
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
 ```
+
+2. 在 app 的 build.gradle 中增加我们开源库的引用
+
+```
+	dependencies {
+	        implementation 'com.github.crazyandcoder:citypicker:6.0.1'
+	}
+```
+
 
 ### **更新说明**
 #### 最新版本
 
-**V5.2.4版本更新内容（2020.12.01）**
-  1. 发布5.2.4版本,增加自定义数据源样式的自定义item属性
-  2. 修复bug
+**V6.0.1版本更新内容（2021.07.09）**
+  1. 更新数据源，使用最新省市区行政数据
+  2. 优化汉字转拼音逻辑，提高解析精度
 
 
 #### 历史更新记录
