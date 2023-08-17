@@ -136,7 +136,7 @@ limitations under the License.
   <a href="javascript:;" rel="noopener" target="_blank"><img width="70%" src="https://img-blog.csdnimg.cn/20191029194659502.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2xqMTg4MjY2,size_16,color_FFFFFF,t_70" alt="citypicker logo"></a></p>
 </p>
  
- 
-
+### 增长趋势
+[![Stargazers over time](https://starchart.cc/crazyandcoder/citypicker.svg)](https://starchart.cc/crazyandcoder/citypicker)
 
  
