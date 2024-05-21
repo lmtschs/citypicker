@@ -97,6 +97,10 @@ public class CityPickerView implements CanShow, OnWheelChangedListener {
 
     }
 
+    public CityParseHelper getParseHelper(){
+        return parseHelper;
+    }
+
     /**
      * 初始化popWindow
      */
