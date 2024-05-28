@@ -9,10 +9,13 @@ import java.util.List;
 /**
  * 自定义数据源需要的数据model,自定义的话需要继承该数据model
  */
-public class CustomCityData  {
+public class CustomCityData {
     private String id; /*110101*/
 
     private String name; /*东城区*/
+
+    //数据层级
+    private int level;
 
     private List<CustomCityData> list = new ArrayList<>();
 
@@ -30,6 +33,13 @@ public class CustomCityData  {
         this.name = name;
     }
 
+    public CustomCityData(String id, String name, int level) {
+        this.id = id;
+        this.name = name;
+        this.level = level;
+    }
+
+
     public String getId() {
         return id;
     }
@@ -44,6 +54,14 @@ public class CustomCityData  {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getLevel() {
+        return level;
+    }
+
+    public void setLevel(int level) {
+        this.level = level;
     }
 
     public List<CustomCityData> getList() {
