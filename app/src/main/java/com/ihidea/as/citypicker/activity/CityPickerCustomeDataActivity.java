@@ -13,6 +13,7 @@ import android.widget.TextView;
 import com.ihidea.as.citypicker.R;
 import com.lljjcoder.Interface.OnCustomCityPickerItemClickListener;
 import com.lljjcoder.bean.CustomCityData;
+import com.lljjcoder.citywheel.CityConfig;
 import com.lljjcoder.citywheel.CustomConfig;
 import com.lljjcoder.style.citycustome.CustomCityPicker;
 
@@ -253,8 +254,10 @@ public class CityPickerCustomeDataActivity extends Activity {
                 .city("宁波市")
                 .district("鄞州区")
                 .cityCyclic(isCityCyclic)
-                .setCustomItemLayout(R.layout.item_custome_city)//自定义item的布局
-                .setCustomItemTextViewId(R.id.item_custome_city_name_tv)
+                .setCustomItemLayout(CityConfig.NONE)
+                .setCustomItemTextViewId(CityConfig.NONE)
+//                .setCustomItemLayout(R.layout.item_custome_city)//自定义item的布局
+//                .setCustomItemTextViewId(R.id.item_custome_city_name_tv)
                 .districtCyclic(isDistrictCyclic)
                 .drawShadows(isShowBg)
                 .setCityWheelType(mWheelType)

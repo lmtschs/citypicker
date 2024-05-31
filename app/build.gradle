@@ -39,4 +39,5 @@ dependencies {
 //    implementation 'com.github.crazyandcoder:citypicker:6.0.1'
     implementation 'com.google.code.gson:gson:2.8.6'
     implementation 'org.jsoup:jsoup:1.11.2'
+    implementation project(path: ':citypickerview')
 }
