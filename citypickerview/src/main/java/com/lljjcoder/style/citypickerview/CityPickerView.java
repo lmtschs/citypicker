@@ -97,7 +97,24 @@ public class CityPickerView implements CanShow, OnWheelChangedListener {
 
     }
 
-    public CityParseHelper getParseHelper(){
+    /**
+     * 初始化，若helper中省数据为空，则重新解析加载本地资源文件中城市数据
+     *
+     * @param context 上下文
+     * @param helper  城市数据转换帮助类
+     */
+    public void init(Context context, CityParseHelper helper) {
+        this.context = context;
+        this.parseHelper = helper;
+
+        //解析初始数据
+        if (parseHelper.getProvinceBeanArrayList().isEmpty()) {
+            parseHelper.initData(context);
+        }
+
+    }
+
+    public CityParseHelper getParseHelper() {
         return parseHelper;
     }
 
